@@ -64,9 +64,9 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>275 245 796 486 0 0 1440 877 </string>
+	<string>328 330 796 486 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>453 182 570 452 0 0 1440 877 </string>
+	<string>536 273 585 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>442 269 570 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1231,7 +1231,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
@@ -1295,11 +1295,11 @@
 	<key>NoSyncInstallationId</key>
 	<string>739BEBB8-702C-4064-944E-B881D429FEDF</string>
 	<key>NoSyncLastTipTime</key>
-	<real>573990112.97569394</real>
+	<real>574679335.16814005</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -1307,6 +1307,10 @@
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -1352,7 +1356,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-11T09:41:52Z</date>
+	<date>2019-03-19T08:40:46Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>

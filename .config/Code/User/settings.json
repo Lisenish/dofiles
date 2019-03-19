@@ -85,9 +85,11 @@
         "syncexecutor",
         "uikit",
         "uncollapsed",
+        "viewbox",
         "wcomp",
         "workschedule",
-        "wrike"
+        "wrike",
+        "xmlns"
     ],
     "workbench.colorCustomizations": {
         "editorError.foreground": "#FF0000",

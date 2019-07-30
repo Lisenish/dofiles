@@ -9,8 +9,6 @@
     "editor.tabCompletion": "on",
     "editor.autoIndent": true,
     "editor.renderWhitespace": "all",
-    "workbench.iconTheme": "vscode-icons",
-    "window.menuBarVisibility": "toggle",
     "dart.lineLength": 120,
     "cSpell.enabledLanguageIds": [
         "c",
@@ -34,6 +32,7 @@
     "cSpell.userWords": [
         "Changelog",
         "Comparator",
+        "Completable",
         "Convertation",
         "Fira",
         "Hoverable",
@@ -48,8 +47,10 @@
         "Roadmap",
         "Scroller",
         "Serializer",
+        "Shareds",
         "Stateful",
         "Transcoding",
+        "Unshare",
         "Wspace",
         "Zoomer",
         "bbox",
@@ -72,6 +73,7 @@
         "mockito",
         "overriden",
         "params",
+        "pomoddoro",
         "readonly",
         "reselect",
         "responsibles",
@@ -472,7 +474,6 @@
     },
     "explorer.confirmDelete": false,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "gitlens.historyExplorer.enabled": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
@@ -482,4 +483,16 @@
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "window.restoreWindows": "all",
+    "java.test.config": {
+        "env": {
+            "env_host": "rctests.wrke.io",
+            "webdriver.remote": false,
+            "test.env": "rctest",
+            "debug.mode": true
+        }
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "vscode-icons",
+    "sync.gist": "d0f57a49a9073100b0dddd323828f8f2"
 }

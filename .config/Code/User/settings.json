@@ -35,6 +35,7 @@
         "Completable",
         "Convertation",
         "Fira",
+        "Gravatar",
         "Hoverable",
         "Injectable",
         "Longpress",
@@ -55,6 +56,7 @@
         "Zoomer",
         "bbox",
         "bezier",
+        "browserslist",
         "bugfixes",
         "comparators",
         "dartium",
@@ -65,9 +67,11 @@
         "deserialize",
         "deserializer",
         "deserializers",
+        "dragdrop",
         "draggable",
         "dropdown",
         "gitlens",
+        "memoized",
         "microtask",
         "middlewares",
         "mockito",
@@ -85,12 +89,15 @@
         "stylesheet",
         "sublist",
         "syncexecutor",
+        "uids",
         "uikit",
         "uncollapsed",
+        "unmount",
         "viewbox",
         "wcomp",
         "workschedule",
         "wrike",
+        "xcom",
         "xmlns"
     ],
     "workbench.colorCustomizations": {
@@ -101,7 +108,6 @@
     "files.autoSave": "afterDelay",
     "dart.runPubGetOnPubspecChanges": false,
     "git.autofetch": true,
-    "workbench.editor.showTabs": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.blame.format": "${message|40?} ${authorAgo|14-}",
     "gitlens.keymap": "chorded",
@@ -483,16 +489,20 @@
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "window.restoreWindows": "all",
-    "java.test.config": {
-        "env": {
-            "env_host": "rctests.wrke.io",
-            "webdriver.remote": false,
-            "test.env": "rctest",
-            "debug.mode": true
-        }
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
     },
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "vscode-icons",
-    "sync.gist": "d0f57a49a9073100b0dddd323828f8f2"
+    "sync.gist": "d0f57a49a9073100b0dddd323828f8f2",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

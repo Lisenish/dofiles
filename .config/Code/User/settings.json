@@ -6,8 +6,8 @@
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "inline",
-    "editor.tabCompletion": "on",
-    "editor.autoIndent": true,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.autoIndent": "full",
     "editor.renderWhitespace": "all",
     "dart.lineLength": 120,
     "cSpell.enabledLanguageIds": [
@@ -30,6 +30,7 @@
         "yml"
     ],
     "cSpell.userWords": [
+        "CORS",
         "Changelog",
         "Comparator",
         "Completable",
@@ -38,6 +39,7 @@
         "Gravatar",
         "Hoverable",
         "Injectable",
+        "Lisenish",
         "Longpress",
         "Microtasks",
         "Millis",
@@ -57,7 +59,9 @@
         "bbox",
         "bezier",
         "browserslist",
+        "bson",
         "bugfixes",
+        "cacheable",
         "comparators",
         "dartium",
         "datetime",
@@ -71,12 +75,15 @@
         "draggable",
         "dropdown",
         "gitlens",
+        "gomock",
         "memoized",
         "microtask",
         "middlewares",
         "mockito",
+        "mongodb",
         "overriden",
         "params",
+        "pento",
         "pomoddoro",
         "readonly",
         "reselect",
@@ -480,9 +487,6 @@
     },
     "explorer.confirmDelete": false,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    },
     "explorer.confirmDragAndDrop": false,
     "dart.triggerSignatureHelpAutomatically": true,
     "dart.showIgnoreQuickFixes": true,
@@ -503,6 +507,27 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[dart]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "oneDarkPro.editorTheme": "Onedark Pro",
+    "go.useLanguageServer": true,
+    "editor.largeFileOptimizations": false,
+    "jest.pathToJest": "",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }

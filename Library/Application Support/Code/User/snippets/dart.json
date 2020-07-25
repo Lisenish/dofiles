@@ -32,5 +32,23 @@
 			"  $0",
 			"}",
 		]
+	},
+
+	"New test file": {
+		"prefix": "testfile",
+		"body": [
+			"@TestOn('vm')",
+			"",
+			"import 'package:test/test.dart';",
+			"void main() {",
+			"  group('$1', () {",
+			"    setUp(() {});",
+			"",
+			"    test('$2', () {$0});",
+			"  });",
+			"}"
+		],
+
 	}
+
 }

@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/dmitryivanov/.oh-my-zsh
+  export ZSH=/home/lisenish/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -83,16 +83,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias wpn='sudo screen -S openvpn -dm openvpn ~/openvpn/openvpn.cfg && sudo service nginx restart && echo "Wrike VPN is started, run [sudo screen -ar] to see it"'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export DART_SDK_PATH=/usr/lib/dart
-export OVERRIDE_WRIKE_DART_DEPS_BRANCH=true
-export PUB_HOSTED_URL="http://pub-dev.wrke.in"
-export DART_FLAGS="--checked"
-export PATH=$PATH:$HOME/.pub-cache/bin
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

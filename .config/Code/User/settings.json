@@ -1,13 +1,13 @@
 {
     "git.confirmSync": false,
     "window.zoomLevel": 0,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "FiraCode-Retina",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "inline",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.autoIndent": "full",
+    "editor.tabCompletion": "on",
+    "editor.autoIndent": true,
     "editor.renderWhitespace": "all",
     "dart.lineLength": 120,
     "cSpell.enabledLanguageIds": [
@@ -30,16 +30,13 @@
         "yml"
     ],
     "cSpell.userWords": [
-        "CORS",
         "Changelog",
         "Comparator",
         "Completable",
         "Convertation",
         "Fira",
-        "Gravatar",
         "Hoverable",
         "Injectable",
-        "Lisenish",
         "Longpress",
         "Microtasks",
         "Millis",
@@ -58,10 +55,7 @@
         "Zoomer",
         "bbox",
         "bezier",
-        "browserslist",
-        "bson",
         "bugfixes",
-        "cacheable",
         "comparators",
         "dartium",
         "datetime",
@@ -71,19 +65,14 @@
         "deserialize",
         "deserializer",
         "deserializers",
-        "dragdrop",
         "draggable",
         "dropdown",
         "gitlens",
-        "gomock",
-        "memoized",
         "microtask",
         "middlewares",
         "mockito",
-        "mongodb",
         "overriden",
         "params",
-        "pento",
         "pomoddoro",
         "readonly",
         "reselect",
@@ -96,15 +85,12 @@
         "stylesheet",
         "sublist",
         "syncexecutor",
-        "uids",
         "uikit",
         "uncollapsed",
-        "unmount",
         "viewbox",
         "wcomp",
         "workschedule",
         "wrike",
-        "xcom",
         "xmlns"
     ],
     "workbench.colorCustomizations": {
@@ -115,6 +101,7 @@
     "files.autoSave": "afterDelay",
     "dart.runPubGetOnPubspecChanges": false,
     "git.autofetch": true,
+    "workbench.editor.showTabs": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.blame.format": "${message|40?} ${authorAgo|14-}",
     "gitlens.keymap": "chorded",
@@ -487,47 +474,27 @@
     },
     "explorer.confirmDelete": false,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
     "explorer.confirmDragAndDrop": false,
     "dart.triggerSignatureHelpAutomatically": true,
     "dart.showIgnoreQuickFixes": true,
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "window.restoreWindows": "all",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
+    "java.test.config": {
+        "env": {
+            "env_host": "rctests.wrke.io",
+            "webdriver.remote": false,
+            "test.env": "rctest",
+            "debug.mode": true
+        }
     },
     "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "vscode-icons",
-    "sync.gist": "d0f57a49a9073100b0dddd323828f8f2",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[dart]": {
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        },
-    },
-    "oneDarkPro.editorTheme": "Onedark Pro",
-    "go.useLanguageServer": true,
-    "editor.largeFileOptimizations": false,
-    "jest.pathToJest": "",
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    "sync.gist": "9f3d6768a81a03988d2bf60fb2996992",
+    "workbench.colorTheme": "One Dark Pro",
+    "sync.autoUpload": true
 }

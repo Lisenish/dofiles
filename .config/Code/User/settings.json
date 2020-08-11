@@ -45,6 +45,7 @@
         "Rect",
         "Rects",
         "Roadmap",
+        "Rollbar",
         "Scroller",
         "Serializer",
         "Shareds",
@@ -55,8 +56,10 @@
         "Zoomer",
         "bbox",
         "bezier",
+        "browserslist",
         "bugfixes",
         "comparators",
+        "compat",
         "dartium",
         "datetime",
         "debounced",
@@ -65,6 +68,7 @@
         "deserialize",
         "deserializer",
         "deserializers",
+        "devtool",
         "draggable",
         "dropdown",
         "gitlens",
@@ -474,9 +478,6 @@
     },
     "explorer.confirmDelete": false,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    },
     "explorer.confirmDragAndDrop": false,
     "dart.triggerSignatureHelpAutomatically": true,
     "dart.showIgnoreQuickFixes": true,
@@ -496,5 +497,13 @@
     "workbench.iconTheme": "vscode-icons",
     "sync.gist": "9f3d6768a81a03988d2bf60fb2996992",
     "workbench.colorTheme": "One Dark Pro",
-    "sync.autoUpload": true
+    "sync.autoUpload": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "sync.quietSync": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

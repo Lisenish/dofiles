@@ -82,7 +82,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>496 486 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 674 1792 424 0 0 1792 1097 </string>
+	<string>382 420 1060 561 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -520,7 +520,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 12</string>
+			<string>MesloLGS-NF-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1198,7 +1198,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 12</string>
+			<string>MesloLGS-NF-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1271,6 +1271,7 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>MesloLGS NF</string>
 		<string>Fira Code</string>
 		<string>Monaco</string>
 	</array>
@@ -1291,7 +1292,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>4D87149B-3A3C-42E1-9092-434D4657C7D8</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>2</integer>
+	<integer>3</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>

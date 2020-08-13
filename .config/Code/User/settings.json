@@ -35,6 +35,7 @@
         "Completable",
         "Convertation",
         "Fira",
+        "Gitlab",
         "Hoverable",
         "Injectable",
         "Longpress",
@@ -505,5 +506,9 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "todohighlight.isEnable": true
 }

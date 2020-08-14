@@ -72,7 +72,9 @@
         "devtool",
         "draggable",
         "dropdown",
+        "fpjs",
         "gitlens",
+        "mgmt",
         "microtask",
         "middlewares",
         "mockito",
@@ -87,6 +89,7 @@
         "scrollable",
         "scrollbar",
         "serializable",
+        "signup",
         "stylesheet",
         "sublist",
         "syncexecutor",
@@ -510,5 +513,11 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "todohighlight.isEnable": true
+    "todohighlight.isEnable": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.exclude": {
+        "**/dist": true
+    }
 }

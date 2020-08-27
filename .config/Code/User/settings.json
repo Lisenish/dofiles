@@ -34,6 +34,7 @@
         "Comparator",
         "Completable",
         "Convertation",
+        "Devtools",
         "Fira",
         "Gitlab",
         "Hoverable",
@@ -59,6 +60,7 @@
         "bezier",
         "browserslist",
         "bugfixes",
+        "clsx",
         "comparators",
         "compat",
         "dartium",
@@ -89,6 +91,7 @@
         "scrollable",
         "scrollbar",
         "serializable",
+        "sidenav",
         "signup",
         "stylesheet",
         "sublist",
@@ -500,7 +503,7 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.iconTheme": "vscode-icons",
     "sync.gist": "9f3d6768a81a03988d2bf60fb2996992",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Better Solarized Dark",
     "sync.autoUpload": true,
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "sync.quietSync": true,
@@ -519,5 +522,14 @@
     },
     "files.exclude": {
         "**/dist": true
-    }
+    },
+    "extensions.ignoreRecommendations": false,
+    "sqltools.connections": [
+        
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": null
 }

@@ -82,7 +82,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>496 486 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 1097 1792 449 0 0 1792 1097 </string>
+	<string>0 649 1792 449 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1301,15 +1301,19 @@
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>4D87149B-3A3C-42E1-9092-434D4657C7D8</string>
+	<key>NoSyncLastTipTime</key>
+	<real>622670490.61049294</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>4</integer>
+	<integer>5</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>618777174.41421998</real>
+	<real>619357955.18009698</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
+	<true/>
+	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -2019,6 +2023,19 @@
 	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>618604374.41408503</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>0006</string>
+		<string>0003</string>
+		<string>0000</string>
+		<string>0007</string>
+		<string>0004</string>
+		<string>0001</string>
+		<string>000</string>
+		<string>0005</string>
+		<string>0002</string>
+		<string>0008</string>
+	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PointerActions</key>
@@ -2067,11 +2084,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-08-14T08:05:22Z</date>
+	<date>2020-09-25T09:27:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>

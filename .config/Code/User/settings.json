@@ -176,5 +176,6 @@
   "typescript.inlayHints.parameterNames.enabled": "literals",
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.guides.bracketPairs": true
+  "editor.guides.bracketPairs": true,
+  "files.hotExit": "onExitAndWindowClose"
 }

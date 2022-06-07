@@ -925,11 +925,11 @@
 			<key>HotKey Alternate Shortcuts</key>
 			<array/>
 			<key>HotKey Characters</key>
-			<string>§</string>
+			<string>1</string>
 			<key>HotKey Characters Ignoring Modifiers</key>
-			<string>§</string>
+			<string>1</string>
 			<key>HotKey Key Code</key>
-			<integer>10</integer>
+			<integer>18</integer>
 			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>

@@ -668,7 +668,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.12556313451776649</real>
+			<real>0.19556313451776652</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -925,11 +925,11 @@
 			<key>HotKey Alternate Shortcuts</key>
 			<array/>
 			<key>HotKey Characters</key>
-			<string>1</string>
+			<string>`</string>
 			<key>HotKey Characters Ignoring Modifiers</key>
-			<string>1</string>
+			<string>`</string>
 			<key>HotKey Key Code</key>
-			<integer>18</integer>
+			<integer>50</integer>
 			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>
@@ -1159,7 +1159,7 @@
 			<key>Screen</key>
 			<integer>-2</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1259,8 +1259,10 @@
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.39759462226941744</real>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>6</integer>
+	<integer>1</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WordCharacters</key>

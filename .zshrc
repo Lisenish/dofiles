@@ -116,14 +116,8 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.config/.git-flow-completion.zsh
 
-export PATH="$HOME/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="$HOME/.bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-
-# Init direnv tool
-eval "$(direnv hook zsh)"
-
-# Init mise tool
-eval "$(mise activate zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/d-ivanov/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/d-ivanov/google-cloud-sdk/path.zsh.inc'; fi
@@ -132,11 +126,3 @@ if [ -f '/Users/d-ivanov/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/d-ivan
 if [ -f '/Users/d-ivanov/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/d-ivanov/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# pnpm
-export PNPM_HOME="/Users/d-ivanov/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end

@@ -494,6 +494,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -1182,6 +1184,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Space</key>

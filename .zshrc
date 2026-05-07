@@ -82,8 +82,8 @@ export LC_ALL="en_US.UTF-8"
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker macos vscode fzf)
+# Add wisely, as too many plugins slow down shell startup. zsh-shift-select
+plugins=(git docker macos vscode fzf zsh-shift-select)
 
 source $ZSH/oh-my-zsh.sh
 

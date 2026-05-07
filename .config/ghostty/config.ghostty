@@ -1,0 +1,9 @@
+theme = Catppuccin Mocha
+background-opacity = 0.85
+background-blur = false
+cursor-style = block
+shell-integration-features = no-cursor
+quick-terminal-size = 30%
+copy-on-select = clipboard
+window-save-state = always
+keybind = global:super+§=toggle_quick_terminal

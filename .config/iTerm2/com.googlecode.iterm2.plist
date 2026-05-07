@@ -6,6 +6,8 @@
 	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>69929A06-66D0-4CD3-B5A8-BEEF7B9C4E84</string>
+	<key>Default Browser Profile Guid</key>
+	<string>115029B5-8FA7-4F1E-B27F-B154BEA88AF4</string>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideFromDockAndAppSwitcher</key>
@@ -927,11 +929,11 @@
 			<key>HotKey Alternate Shortcuts</key>
 			<array/>
 			<key>HotKey Characters</key>
-			<string>`</string>
+			<string>§</string>
 			<key>HotKey Characters Ignoring Modifiers</key>
-			<string>`</string>
+			<string>§</string>
 			<key>HotKey Key Code</key>
-			<integer>50</integer>
+			<integer>10</integer>
 			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>

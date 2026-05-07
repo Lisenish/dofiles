@@ -727,7 +727,7 @@
 
   ######################################[ ram: free RAM ]#######################################
   # RAM color.
-  typeset -g POWERLEVEL9K_RAM_FOREGROUND=66
+  typeset -g POWERLEVEL9K_RAM_FOREGROUND=39
   # Custom icon.
   # typeset -g POWERLEVEL9K_RAM_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -740,12 +740,12 @@
   ######################################[ load: CPU load ]######################################
   # Show average CPU load over this many last minutes. Valid values are 1, 5 and 15.
   typeset -g POWERLEVEL9K_LOAD_WHICH=5
-  # Load color when load is under 50%.
-  typeset -g POWERLEVEL9K_LOAD_NORMAL_FOREGROUND=66
-  # Load color when load is between 50% and 70%.
+  # Low load, under 50%.
+  typeset -g POWERLEVEL9K_LOAD_NORMAL_FOREGROUND=70
+  # Medium load, between 50% and 70%.
   typeset -g POWERLEVEL9K_LOAD_WARNING_FOREGROUND=178
-  # Load color when load is over 70%.
-  typeset -g POWERLEVEL9K_LOAD_CRITICAL_FOREGROUND=166
+  # High load, over 70%.
+  typeset -g POWERLEVEL9K_LOAD_CRITICAL_FOREGROUND=196
   # Custom icon.
   # typeset -g POWERLEVEL9K_LOAD_VISUAL_IDENTIFIER_EXPANSION='⭐'
 

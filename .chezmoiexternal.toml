@@ -1,0 +1,6 @@
+[".oh-my-zsh/custom/plugins/zsh-shift-select"]
+    type = "git-repo"
+    url = "https://github.com/jirutka/zsh-shift-select.git"
+    refreshPeriod = "168h"
+    [".oh-my-zsh/custom/plugins/zsh-shift-select".pull]
+        args = ["--ff-only"]

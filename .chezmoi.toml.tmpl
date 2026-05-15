@@ -1,0 +1,5 @@
+{{- /* Prompt once at `chezmoi init` time; answer persists in ~/.config/chezmoi/chezmoi.toml */ -}}
+{{- $work := promptBoolOnce . "work" "Is this a work (Mercari) machine" -}}
+[data]
+work = {{ $work }}
+email = "{{ if $work }}d-ivanov@mercari.com{{ else }}{{ promptStringOnce . "email" "Personal git email" }}{{ end }}"

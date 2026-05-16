@@ -1,0 +1,11 @@
+{{- /* Keep this in sync with .chezmoi.toml.tmpl for apply-time config sync. */ -}}
+[data]
+work = {{ .work }}
+email = "{{ .email }}"
+
+[edit]
+command = "zed"
+args = ["--wait"]
+
+[git]
+autoPush = true

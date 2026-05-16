@@ -3,3 +3,10 @@
 [data]
 work = {{ $work }}
 email = "{{ if $work }}d-ivanov@mercari.com{{ else }}{{ promptStringOnce . "email" "Personal git email" }}{{ end }}"
+
+[edit]
+command = "zed"
+args = ["--wait"]
+
+[git]
+autoPush = true

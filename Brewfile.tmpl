@@ -1,7 +1,6 @@
 {{ if .work -}}
 tap "hashicorp/tap"
 {{ end -}}
-tap "homebrew/bundle"
 tap "nikitabobko/tap"
 brew "bash-completion"
 brew "cairo"
@@ -24,7 +23,6 @@ brew "helm"
 brew "htop"
 brew "httpie"
 brew "hub"
-brew "icu4c@75"
 brew "jpeg"
 brew "jq"
 {{ if .work -}}
@@ -42,7 +40,6 @@ brew "pnpm"
 brew "protobuf"
 brew "python@3.10"
 {{ if not .work -}}
-brew "spotify-tui"
 brew "spotify_player"
 {{ end -}}
 brew "websocat"

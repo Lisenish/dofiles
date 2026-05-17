@@ -161,8 +161,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-{{ if .work -}}
-
+{{ if .work }}
 merclaude() {
   ANTHROPIC_AUTH_TOKEN=$(op read "op://Employee/litellm/credential") ANTHROPIC_BASE_URL="https://litellm.mercari.in" claude
 }

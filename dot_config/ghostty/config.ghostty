@@ -8,9 +8,6 @@ copy-on-select = clipboard
 
 window-save-state = always
 
-{{ if .work -}}
-keybind = global:super+`=toggle_quick_terminal
-{{ else -}}
 keybind = global:super+§=toggle_quick_terminal
-{{ end -}}
+keybind = global:super+`=toggle_quick_terminal
 keybind = super+v=paste_from_clipboard

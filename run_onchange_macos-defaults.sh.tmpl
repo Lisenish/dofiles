@@ -1,0 +1,27 @@
+#!/bin/sh
+# Re-runs whenever this script's hash changes.
+# Hash trigger: {{ include "run_onchange_macos-defaults.sh.tmpl" | sha256sum }}
+set -eu
+
+# Keyboard: fast key repeat, short initial delay
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Appearance: dark mode
+defaults write NSGlobalDomain AppleInterfaceStyle -string Dark
+
+# Scrolling: disable "natural" scroll direction
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+# Trackpad: faster pointer
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 1.5
+
+# Dock: smaller tiles + bottom-right hot corner = Display Sleep
+defaults write com.apple.dock tilesize -int 60
+defaults write com.apple.dock wvous-br-corner -int 14
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+killall Finder Dock 2>/dev/null || true

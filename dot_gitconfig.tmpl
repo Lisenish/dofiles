@@ -1,0 +1,10 @@
+[user]
+	name = Ivanov Dmitrii
+	email = {{ .email }}
+{{- if .work }}
+	signingkey = 41A028F8F6992EC2830D10CCC5E6FD98D5B0774F
+[commit]
+	gpgsign = true
+{{- end }}
+[url "git@github.com:"]
+	insteadOf = https://github.com/

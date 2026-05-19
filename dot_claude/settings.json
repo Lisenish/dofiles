@@ -1,0 +1,38 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "true"
+  },
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "figma@claude-plugins-official": true,
+    "asdd-kit@asdd-kit": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "platform@coding-agent-plugins": true
+  },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    },
+    "asdd-kit": {
+      "source": {
+        "source": "github",
+        "repo": "kouzoh/asdd-kit"
+      }
+    },
+    "coding-agent-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "kouzoh/coding-agent-plugins"
+      }
+    }
+  },
+  "theme": "light",
+  "skipAutoPermissionPrompt": true,
+  "effortLevel": "xhigh"
+}

@@ -1,57 +1,75 @@
-{{ if .work -}}
-tap "hashicorp/tap"
-{{ end -}}
 tap "nikitabobko/tap"
+
 brew "bash-completion"
 brew "cairo"
+brew "chezmoi"
 brew "coreutils"
 brew "direnv"
+brew "doggo"
 brew "fx"
 brew "fzf"
 brew "gh"
 brew "giflib"
 brew "git"
 brew "git-lfs"
-brew "p11-kit"
-brew "unbound"
-brew "gnutls"
 brew "gnupg"
-{{ if .work -}}
-brew "grpcurl"
-brew "helm"
-{{ end -}}
+brew "gnutls"
 brew "htop"
 brew "httpie"
 brew "hub"
 brew "jpeg"
 brew "jq"
-{{ if .work -}}
-brew "k9s"
-brew "kubectx"
-brew "kustomize"
-{{ end -}}
-brew "pango"
 brew "librsvg"
 brew "mise"
-brew "pkgconf"
+brew "mole"
 brew "node-build"
+brew "p11-kit"
+brew "pango"
 brew "pinentry-mac"
+brew "pkgconf"
 brew "pnpm"
 brew "protobuf"
 brew "python@3.10"
-{{ if not .work -}}
-brew "spotify_player"
-{{ end -}}
+brew "rsync"
+brew "unbound"
 brew "websocat"
-brew "chezmoi"
+brew "xmlstarlet"
 brew "yq"
-{{ if .work -}}
-brew "hashicorp/tap/terraform"
-{{ end -}}
+
 cask "aerospace"
 cask "alt-tab"
+cask "codex"
+cask "cursor"
 cask "font-fira-code"
+cask "ghostty"
 cask "ngrok"
 cask "postman"
+
+{{ if .work -}}
+tap "hashicorp/tap"
+tap "kouzoh/tap"
+tap "withgraphite/tap"
+
+brew "aqua"
+brew "grpcurl"
+brew "hashicorp/tap/terraform"
+brew "helm"
+brew "k9s"
+brew "kouzoh/tap/merctl"
+brew "kubectx"
+brew "kustomize"
+brew "withgraphite/tap/graphite"
+
+cask "1password-cli"
+cask "claude-code@latest"
+cask "gcloud-cli"
+cask "slack"
+cask "tailscale-app"
+{{ end }}
+{{ if not .work -}}
+brew "spotify_player"
+
+cask "telegram"
+{{ end }}
 # VS Code extensions are managed by Settings Sync (signed into VS Code)
 # rather than brew bundle — they desync too often when pinned here.

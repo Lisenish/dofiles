@@ -38,12 +38,15 @@ brew "yq"
 
 cask "aerospace"
 cask "alt-tab"
+cask "cmux"
 cask "codex"
 cask "cursor"
 cask "font-fira-code"
 cask "ghostty"
 cask "ngrok"
+cask "notion-calendar"
 cask "postman"
+cask "zed"
 
 {{ if .work -}}
 tap "hashicorp/tap"
@@ -69,6 +72,7 @@ cask "tailscale-app"
 {{ if not .work -}}
 brew "spotify_player"
 
+cask "spotify"
 cask "telegram"
 {{ end }}
 # VS Code extensions are managed by Settings Sync (signed into VS Code)

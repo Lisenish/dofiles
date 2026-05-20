@@ -32,7 +32,7 @@
       }
     }
   },
-  "theme": "light",
-  "skipAutoPermissionPrompt": true,
-  "effortLevel": "xhigh"
+  "effortLevel": "xhigh",
+  "theme": "dark-ansi",
+  "skipAutoPermissionPrompt": true
 }

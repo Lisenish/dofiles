@@ -166,11 +166,25 @@ fi
 
 # pnpm
 export PNPM_HOME="{{ .chezmoi.homeDir }}/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# Global `pnpm add -g` bins land flat in $PNPM_HOME with pnpm 10 (the repo-pinned
+# version via corepack) and in $PNPM_HOME/bin with standalone pnpm 11 — keep both
+# reachable so global tools resolve regardless of which pnpm installed them.
+for _pnpm_dir in "$PNPM_HOME/bin" "$PNPM_HOME"; do
+  case ":$PATH:" in
+    *":$_pnpm_dir:"*) ;;
+    *) export PATH="$_pnpm_dir:$PATH" ;;
+  esac
+done
+unset _pnpm_dir
 # pnpm end
+
+# go (binaries from `go install` land in GOPATH/bin)
+export GOBIN="{{ .chezmoi.homeDir }}/go/bin"
+case ":$PATH:" in
+  *":$GOBIN:"*) ;;
+  *) export PATH="$GOBIN:$PATH" ;;
+esac
+# go end
 {{ if .work }}
 merclaude() {
   ANTHROPIC_AUTH_TOKEN=$(op read "op://Employee/litellm/credential") ANTHROPIC_BASE_URL="https://litellm.mercari.in" claude

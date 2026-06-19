@@ -1,0 +1,28 @@
+#!/bin/sh
+# Enable Touch ID (fingerprint) for sudo in the terminal.
+#
+# macOS overwrites /etc/pam.d/sudo on OS updates, but it preserves
+# /etc/pam.d/sudo_local — which /etc/pam.d/sudo includes via
+# "auth include sudo_local". Configuring sudo_local therefore survives updates.
+#
+# Re-runs whenever this script's hash changes.
+# Hash trigger: {{ include "run_onchange_setup-touchid-sudo.sh.tmpl" | sha256sum }}
+set -eu
+
+TARGET=/etc/pam.d/sudo_local
+
+# Idempotent: skip if Touch ID for sudo is already enabled.
+if [ -f "$TARGET" ] && grep -qE '^[[:space:]]*auth[[:space:]]+sufficient[[:space:]]+pam_tid\.so' "$TARGET"; then
+  echo "Touch ID for sudo already enabled."
+  exit 0
+fi
+
+echo "Enabling Touch ID for sudo (writing $TARGET — needs admin)..."
+sudo tee "$TARGET" >/dev/null <<'EOF'
+# sudo_local: local config file which survives system update and is included for sudo
+# Touch ID for sudo — survives OS updates. Managed by chezmoi.
+auth       sufficient     pam_tid.so
+EOF
+sudo chmod 444 "$TARGET"
+sudo chown root:wheel "$TARGET"
+echo "Touch ID for sudo enabled."

@@ -7,7 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "provider": "copilot"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
   "terminal": {
+    "env": {
+      "FIG_NEW_SESSION": "\"1\""
+    },
     "font_family": "MesloLGS NF"
   },
   "git": {
@@ -30,11 +44,11 @@
   "colorize_brackets": true,
   "auto_indent_on_paste": true,
   "linked_edits": true,
-  "show_whitespaces": "none",
+  "show_whitespaces": "all",
   "show_edit_predictions": true,
   "ensure_final_newline_on_save": true,
   "agent_servers": {
-    "claude-acp": {
+    "codex-acp": {
       "type": "registry"
     }
   },

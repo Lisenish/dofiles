@@ -37,10 +37,10 @@ brew "xmlstarlet"
 brew "yq"
 
 cask "aerospace"
-cask "alt-tab"
 cask "cmux"
 cask "codex"
 cask "cursor"
+cask "dockdoor"
 cask "font-fira-code"
 cask "ghostty"
 cask "ngrok"
@@ -48,6 +48,7 @@ cask "notion-calendar"
 cask "postman"
 cask "visual-studio-code"
 cask "zed"
+
 
 {{ if .work -}}
 tap "hashicorp/tap"
@@ -72,7 +73,6 @@ cask "tailscale-app"
 {{ end }}
 {{ if not .work -}}
 brew "spotify_player"
-
 cask "spotify"
 cask "telegram"
 {{ end }}

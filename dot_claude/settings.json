@@ -10,7 +10,9 @@
     "figma@claude-plugins-official": true,
     "asdd-kit@asdd-kit": true,
     "typescript-lsp@claude-plugins-official": true,
-    "platform@coding-agent-plugins": true
+    "platform@coding-agent-plugins": true,
+    "meta-skills@coding-agent-plugins": true,
+    "skill-creator@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {

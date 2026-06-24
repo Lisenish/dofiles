@@ -7,5 +7,14 @@ email = "{{ .email }}"
 command = "zed"
 args = ["--wait"]
 
+[merge]
+command = "bash"
+# VSCode's `code --merge <local> <remote> <base> <result>` needs 4 DISTINCT paths.
+# chezmoi only provides 3 (.Destination, .Target, .Source), so we copy .Target to a
+# temp file to serve as a distinct base; otherwise VSCode just opens the files as tabs.
+#   local=.Destination (your file)  remote=.Target (desired)  base=temp copy  result=.Source (written back)
+# `code` comes from the visual-studio-code brew cask (/opt/homebrew/bin/code).
+args = ["-c", 'base=$(mktemp); cp "{{ .Target }}" "$base"; code --wait --merge "{{ .Destination }}" "{{ .Target }}" "$base" "{{ .Source }}"; rm -f "$base"']
+
 [git]
 autoPush = true

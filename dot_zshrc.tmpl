@@ -152,28 +152,6 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 
-# chezmoi completion (uses the active chezmoi binary, so it always matches the installed version)
-command -v chezmoi >/dev/null 2>&1 && eval "$(chezmoi completion zsh)"
-
-# Restrict chezmoi's path-argument completion to MANAGED targets. chezmoi's own completion
-# returns ShellCompDirectiveDefault for path args (plain filename completion, like cd), so it
-# offers every file. This wraps it: for subcommands that operate on managed files we complete
-# from `chezmoi managed` (hierarchical, ~-relative); everything else defers to chezmoi's completion.
-if (( $+functions[_chezmoi] )); then
-  functions[_chezmoi_cobra]=$functions[_chezmoi]
-  _chezmoi() {
-    local -a _cz_managed_cmds=(apply diff merge re-add cat edit forget destroy verify status chattr)
-    if (( CURRENT > 2 )) && (( ${_cz_managed_cmds[(Ie)${words[2]}]} )); then
-      local -a _cz_files
-      _cz_files=(${(f)"$(command chezmoi managed --path-style absolute 2>/dev/null)"})
-      _cz_files=(${_cz_files[@]/#$HOME/\~})
-      _multi_parts / _cz_files
-      return
-    fi
-    _chezmoi_cobra
-  }
-fi
-
 # Init direnv tool
 eval "$(direnv hook zsh)"
 

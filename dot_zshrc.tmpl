@@ -152,6 +152,9 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 
+# chezmoi completion (uses the active chezmoi binary, so it always matches the installed version)
+command -v chezmoi >/dev/null 2>&1 && eval "$(chezmoi completion zsh)"
+
 # Init direnv tool
 eval "$(direnv hook zsh)"
 

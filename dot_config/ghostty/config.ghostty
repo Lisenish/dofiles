@@ -1,3 +1,5 @@
+# Managed by chezmoi. Edits here are overwritten by chezmoi apply.
+# Edit the source instead:  chezmoi edit ~/.config/ghostty/config.ghostty
 theme = Catppuccin Mocha
 background-opacity = 0.85
 background-blur = false

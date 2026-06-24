@@ -1,1 +1,3 @@
+# Managed by chezmoi. Edits here are overwritten by chezmoi apply.
+# Edit the source instead:  chezmoi edit ~/.config/git/ignore
 **/.claude/settings.local.json

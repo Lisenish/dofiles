@@ -9,12 +9,13 @@ command = "zed"
 args = ["--wait"]
 
 [merge]
-command = "code"
-# VSCode 3-way merge editor: code --merge <local> <remote> <base> <result>
-# local=.Destination (your current file), remote=.Target (chezmoi's desired state),
-# base & result=.Source — the merged output is written back to the source file.
-# Requires the `code` CLI: in VSCode, Cmd+Shift+P → "Shell Command: Install 'code' command in PATH".
-args = ["--wait", "--merge", "{{ `{{ .Destination }}` }}", "{{ `{{ .Target }}` }}", "{{ `{{ .Source }}` }}", "{{ `{{ .Source }}` }}"]
+command = "bash"
+# VSCode's `code --merge <local> <remote> <base> <result>` needs 4 DISTINCT paths.
+# chezmoi only provides 3 (.Destination, .Target, .Source), so we copy .Target to a
+# temp file to serve as a distinct base; otherwise VSCode just opens the files as tabs.
+#   local=.Destination (your file)  remote=.Target (desired)  base=temp copy  result=.Source (written back)
+# `code` comes from the visual-studio-code brew cask (/opt/homebrew/bin/code).
+args = ["-c", 'base=$(mktemp); cp "{{ `{{ .Target }}` }}" "$base"; code --wait --merge "{{ `{{ .Destination }}` }}" "{{ `{{ .Target }}` }}" "$base" "{{ `{{ .Source }}` }}"; rm -f "$base"']
 
 [git]
 autoPush = true

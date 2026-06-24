@@ -9,10 +9,12 @@ command = "zed"
 args = ["--wait"]
 
 [merge]
-command = "zed"
-# Zed has no true 3-way merge CLI, so this is a 2-way diff:
-# left = your current file (.Destination), right = the source (.Source) — edit the RIGHT pane and save.
-args = ["--wait", "--diff", "{{ `{{ .Destination }}` }}", "{{ `{{ .Source }}` }}"]
+command = "code"
+# VSCode 3-way merge editor: code --merge <local> <remote> <base> <result>
+# local=.Destination (your current file), remote=.Target (chezmoi's desired state),
+# base & result=.Source — the merged output is written back to the source file.
+# Requires the `code` CLI: in VSCode, Cmd+Shift+P → "Shell Command: Install 'code' command in PATH".
+args = ["--wait", "--merge", "{{ `{{ .Destination }}` }}", "{{ `{{ .Target }}` }}", "{{ `{{ .Source }}` }}", "{{ `{{ .Source }}` }}"]
 
 [git]
 autoPush = true

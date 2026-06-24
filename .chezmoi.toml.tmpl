@@ -8,5 +8,11 @@ email = "{{ if $work }}d-ivanov@mercari.com{{ else }}{{ promptStringOnce . "emai
 command = "zed"
 args = ["--wait"]
 
+[merge]
+command = "zed"
+# Zed has no true 3-way merge CLI, so this is a 2-way diff:
+# left = your current file (.Destination), right = the source (.Source) — edit the RIGHT pane and save.
+args = ["--wait", "--diff", "{{ `{{ .Destination }}` }}", "{{ `{{ .Source }}` }}"]
+
 [git]
 autoPush = true
